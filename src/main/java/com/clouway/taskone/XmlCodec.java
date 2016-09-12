@@ -28,7 +28,4 @@ public class XmlCodec implements MessageCodec {
         return (T) xstream.fromXML(message);
     }
 
-    public Object unmarchall (String xml) {
-        return  xstream.fromXML(xml);
-    }
 }

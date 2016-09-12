@@ -42,7 +42,7 @@ public class JsonCodecTests {
         Person expected = new Person(name, lastName, age);
 
         String json = "{\"firstName\":\"" + name + "\",\"lastName\":\"" + lastName + "\",\"age\":" + age + "}";
-        Person actual = (Person) codec.unmarchall(json, Person.class );
+        Person actual = codec.unmarchall(json, Person.class );
 
         assertThat(actual , is(expected));
     }
